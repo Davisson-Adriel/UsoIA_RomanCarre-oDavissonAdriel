@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.myButton {
+    margin-left: 10px;
+    padding: 5px 10px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    background-color: rgb(233, 233, 233);
+}
+
+#myInput {
+    padding: 5px;
+    background-color: white;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+    margin-top: 0px;
+    border-radius: 5px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    border: solid rgb(93, 93, 93) 0.5px;
+    padding: 10px;
+    align-items: center;
+    border-radius: 10px;
+    background-color: rgb(47, 47, 47);
+    height: 280px;
+}
+
+h2 {
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 15px;
+    font-size: 25px;
+}
+
+p {
+    color: white;
+    font-weight: lighter;
+    font-family: 'Arial', sans-serif;
+    font-size: 15px;
+}
