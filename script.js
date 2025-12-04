@@ -1,10 +1,10 @@
-function obtenerproductor() {
+function obtener() {
     const contenedor = document.getElementById("container");
     fetch(linkAPI)
         .then(response => response.json())
         .then(personajes => {
 
-            contenedor.innerHTML = '';
+            personajes = personajes.results;
 
             setTimeout(() => {
                 contenedor.textContent = "";
@@ -14,18 +14,18 @@ function obtenerproductor() {
                     card.className = "card";
                     const img = document.createElement("img");
                     img.src = personaje.image;
-                    img.alt = personaje.title;
                     const h2 = document.createElement("h2");
-                    h2.textContent = personaje.title;
+                    h2.textContent = personaje.name;
                     const estado = document.createElement("p");
-                    estado.textContent = personaje.price;
+                    estado.textContent = personaje.status;
 
                     card.append(img, h2, estado);
                     contenedor.appendChild(card);
                 });
-            }, 3000);
+            }, 2000);
         });
 };
 
-const linkAPI = "https://fakestoreapi.com/products";
-const linkAPI2 = "https://rickandmortyapi.com/api/character";
+const linkAPI = "https://rickandmortyapi.com/api/character";
+
+obtener();

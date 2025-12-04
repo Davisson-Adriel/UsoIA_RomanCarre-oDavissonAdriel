@@ -41,11 +41,13 @@ h1 {
     margin-top: 10px;
 }
 
-.container {
+#container {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 img {
@@ -65,6 +67,7 @@ img {
     border-radius: 10px;
     background-color: rgb(47, 47, 47);
     height: 280px;
+    flex-wrap: wrap;
 }
 
 h2 {
